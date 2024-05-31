@@ -1,1 +1,45 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.outerContainer {
+    display:flex;
+    justify-content:center;
+
+}
+
+.card{
+    background-color:white;
+    border-style:solid;
+    border-radius:25px;
+    margin:auto;
+    width:80%;
+    height:80%;
+}
+
+.container {
+    width:400px;
+    height:600px;
+    background-color:green;
+    display:flex;
+    align-items:center;
+    padding:0;
+}
+
+.topSuit  {
+    font-size:72px;
+    color:red;
+    margin-top:20px;
+    padding-top:5%;
+    padding-left:5%;
+}
+
+.cardValue {
+    font-size:72px;
+    text-align:center;
+}
+
+.bottomSuit {
+    font-size:72px;
+    color:red;
+    text-align:end;
+    margin-bottom:0;
+    padding-right:5%;
+    padding-bottom:5%;
+}
