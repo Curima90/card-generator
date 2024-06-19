@@ -1,23 +1,25 @@
-window.onload = function () {
-};
-
-function cardNumber() {
-  let number = Math.floor((Math.random() * 12) + 1)
-  if (number = "11") {
-    number = "J";
-  }
-  else if (number = "12") {
-
-    number = "Q";
-  }
-  else if (number = "13") {
-
-    number = "K";
-  }
-  else if (number = "1") {
-
-    number = "A"
-  }
-  return number;
+function getNumber () {
+  let numbers = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+  let index = Math.floor(Math.random() * numbers.length);
+  return numbers[index]
 }
 
+function getSuit () {
+  let suits = ["♦", "♥", "♠", "♣"];
+  let index = Math.floor(Math.random() * suits.length);
+  return suits[index];
+}
+
+setInterval(() => {
+  let suit = getSuit();
+  if(suit === "♦" || suit === "♥") {
+      document.querySelector("#top-suit").classList.add("red-suits");
+      document.querySelector("#bottom-suit").classList.add("red-suits")
+  } else {
+      document.querySelector("#top-suit").classList.remove("red-suits");
+      document.querySelector("#bottom-suit").classList.remove("red-suits");
+  }
+  document.querySelector("#top-suit").innerHTML = suit;
+  document.querySelector("#bottom-suit").innerHTML = suit;
+  document.querySelector("h1").innerHTML = getNumber();
+}, 1000)

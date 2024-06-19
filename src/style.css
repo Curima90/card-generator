@@ -1,45 +1,47 @@
-.outerContainer {
-    display:flex;
-    justify-content:center;
+body {
+    background-color: green;
+}
+
+.card {
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.476);
+    padding: 5px;
 
 }
 
-.card{
-    background-color:white;
-    border-style:solid;
-    border-radius:25px;
-    margin:auto;
-    width:80%;
-    height:80%;
+.top-row {
+    margin-top: 10px;
 }
 
-.container {
-    width:400px;
-    height:600px;
-    background-color:green;
-    display:flex;
-    align-items:center;
-    padding:0;
+.number {
+    display: flex;
+    justify-content: center;
+    height: 260px;
+    
 }
 
-.topSuit  {
-    font-size:72px;
-    color:red;
-    margin-top:20px;
-    padding-top:5%;
-    padding-left:5%;
+.bottom-row {
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
 }
 
-.cardValue {
-    font-size:72px;
-    text-align:center;
+h1 {
+    font-size: 120px;
+    margin: auto;
 }
 
-.bottomSuit {
-    font-size:72px;
-    color:red;
-    text-align:end;
-    margin-bottom:0;
-    padding-right:5%;
-    padding-bottom:5%;
+h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+
+
+.red-suits {
+    color: red;
 }
